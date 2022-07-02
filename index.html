@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mateus Zucco, Lucas Zanella, William Filippi">
+    <title>API CNPJ</title>
+  </head>
+
+  <body>
+    <div class="content">
+        <p style="padding-bottom:25px; font-size: 1rem">Consulta à api https://www.cnpj.ws/</p>
+        <div class="box">
+            <input placeholder="CNPJ" placeholder='00000000000000'  class="field" size="14" maxlength="14" type="number" id="cnpj">
+            <input id="find" class="button" type="button" value="BUSCAR" >
+        </div>
+        <div class="borda">
+            <div id="infos" class="tarefas"></div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-size: 62.5%;
+    background: #5CBD95;
+    font-family: Arial;
+    color: #EDF5E1;
+    text-align: center;
+    
+}
+.box{
+    font-size: 0.8rem;
+    color: black;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.field, .button{
+    border: 0px solid white; 
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 0 10px 0;
+}
+.field{
+    background: rgba(255, 233, 233, 0.945);
+}
+.button{
+    background: rgb(6, 115, 240);
+    color:white;
+}
+.infos{
+    font-size: 1.4rem;
+    margin-top: 35px;
+}
+.err{
+    font-size: 1.4rem;
+    margin-top: 35px;
+    color: rgb(255, 166, 0);
+}
+</style>
